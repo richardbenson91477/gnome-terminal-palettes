@@ -1,0 +1,6 @@
+#!/bin/bash
+./import.py
+for f in *.xfce.pal; do
+    ../from_xfce.py "$f" >> ${f//xfce/gnome}
+done
+mv *.pal ../imported/
