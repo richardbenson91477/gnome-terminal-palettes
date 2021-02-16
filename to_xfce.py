@@ -2,7 +2,7 @@
 import sys
 
 def rgb(r, g, b):
-    print('#' + format(r, 'x') + format(g, 'x') + format(b, 'x') + ';', end='');
+    print('#' + ''.join('%02x'%i for i in [r, g, b]))
     return
 
 def main():
