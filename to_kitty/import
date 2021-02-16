@@ -1,0 +1,11 @@
+#!/bin/bash
+for D in imported themes; do
+    cd ../"$D"
+    FILES=$(echo *.gnome.pal)
+    cd -
+    for f in $FILES; do
+        echo "$f"
+        ./to_kitty.py ../$D/"$f" > $D/"${f/.gnome.pal/.conf}"
+        done
+    done
+
