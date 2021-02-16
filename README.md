@@ -1,4 +1,4 @@
-Custom gnome-terminal palettes and utils<br>
+Custom gnome-terminal palettes and utils for import/export<br>
 <br>
 NOTE: You may have to edit the scripts with your own profile ID.<br>
 <br>
