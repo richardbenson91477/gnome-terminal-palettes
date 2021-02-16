@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 import sys
 
-color_index = (0,9,1,10,2,11,3,12,4,13,5,14,6,7,8,15)
-#color_index = (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
-
 def rgb(r, g, b):
     print('#' + ''.join('%02x'%i for i in [r, g, b]))
     return
@@ -28,8 +25,7 @@ def main():
     scheme = eval(scheme)
 
     for c, color in enumerate(scheme):
-        c2 = color_index[c]
-        print(f"color{c2} ", end='')
+        print(f"color{c} ", end='')
         eval(color)
 
     f_in = open('kitty.defaults', 'r')
